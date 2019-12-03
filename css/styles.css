@@ -30,16 +30,24 @@ a {
 
 div {
     background-color: rgba(0,0,0,0.5);
-    background-size: contain;
+    background-size: cover;
 }
 
 h2 {
   display:flex;
   justify-content: center;
   width:100%;
-  font-size: 500%;
+  font-size: 600%;
 }
 
 ul {
 
+}
+
+h3 {
+  display:flex;
+  justify-content: center;
+  width:100%;
+  font-size: 600%;
+  color: white;
 }
