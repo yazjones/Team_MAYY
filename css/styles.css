@@ -14,3 +14,58 @@
 body {
     cursor: url(../images/cursor.png), auto;
 }
+
+p {
+  font-family: 'Handlee', cursive;
+}
+
+a {
+  margin: auto;
+  font-family: 'Patrick hand', cursive;
+  font-size: 150%;
+  font-weight:normal;
+  color:white;
+}
+
+
+div {
+    background-color: rgb(125,250,250);
+}
+
+h2 {
+  font-family: 'Handlee', cursive;
+  display:flex;
+  justify-content: center;
+  width:100%;
+}
+
+ul {
+
+  background-color: black;
+}
+
+
+#popup
+{
+display:none;
+position:fixed;
+left:40%;
+top:40%;
+width:600px;
+height:500px;
+margin-top:-75px;
+margin-left:-150px;
+background:#FFFFFF;
+border:2px solid #000;
+z-index:100000;
+}
+
+.planetContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+.popup {
+  display: none;
+}
