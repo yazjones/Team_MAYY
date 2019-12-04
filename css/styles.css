@@ -1,19 +1,21 @@
-
-.content {
-    opacity: 0.0;
-    transition: all 500ms ease-in-out;
-    background-color: black;
-    color: white;
+.nav-link {
+  text-transform: uppercase;
 }
-.hover {
 
-}
-.hover:hover + .content {
+
+.nav-link:hover {
+    color: #999;
     opacity: 1.0;
 }
 
 body {
     cursor: url(../images/cursor.png), auto;
+    background-color: #000;
+    color: #ddd;
+}
+
+ul {
+  list-style: none;
 }
 
 p {
@@ -22,15 +24,10 @@ p {
 
 a {
   margin: auto;
-  font-family: 'Patrick hand', cursive;
+  font-family: 'Handlee', cursive;
   font-size: 150%;
   font-weight:normal;
   color:white;
-}
-
-
-div {
-    background-color: rgb(0,0,0);
 }
 
 h2 {
@@ -40,26 +37,6 @@ h2 {
   width:100%;
 }
 
-ul {
-
-  background-color: black;
-}
-
-
-#popup
-{
-display:none;
-position:fixed;
-left:40%;
-top:40%;
-width:600px;
-height:500px;
-margin-top:-75px;
-margin-left:-150px;
-background:#FFFFFF;
-border:2px solid #000;
-z-index:100000;
-}
 
 .planetContainer {
   display: flex;
@@ -67,6 +44,9 @@ z-index:100000;
   align-items: center;
 
 }
+
 .popup {
   display: none;
+  border: 2px solid white;
+  border-radius: 0.3em;
 }

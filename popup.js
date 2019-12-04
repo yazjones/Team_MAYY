@@ -1,16 +1,29 @@
 window.onload = function() {
 
         var containers = document.getElementsByClassName("planetContainer");
-        Array.from(containers).forEach(function(){
-          console.log("wpisuje");
-        //  container.onclick = function(){
+        Array.from(containers).forEach(function(container){
+          var img = container.getElementsByTagName("img")[0];
+          var desc = container.getElementsByTagName("div")[0];
 
-      //    var mercDesc = document.getElementsByClassN("mercuryDesc");
-
-      //    if(mercDesc.style.display == "block")
-      //    mercDesc.style.display = "none";
-      //    else mercDesc.style.display = "block"; }
+          img.onclick = function() {
+            if (desc.style.display != "block") {
+              desc.style.display = "block";
+            }
+            else {
+              desc.style.display = "none";
+            }
+          }
         });
+        //    var displayed = false;
+        //    if (!displayed) {
+        //   desc.style.display = "block";
+        //   displayed = true;
+        // }
+        // else {
+        //   desc.style.display = "none";
+        //   displayed = false;
+        // }
+        // }
 
 
 
