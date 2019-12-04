@@ -21,15 +21,18 @@
   color: white;
   align-self: center;
 }
-.hover {
 
-}
-.hover:hover + .content {
-  opacity: 1.0;
+.nav-link {
+  text-transform: uppercase;
+.nav-link:hover {
+    color: #999;
+    opacity: 1.0;
 }
 
 body {
   cursor: url(../images/cursor.png), auto;
+  background-color: #000;
+  color: #ddd;
 }
 
 a {
@@ -39,6 +42,11 @@ a {
   font-weight: normal;
   color:white;
 }
+
+ul {
+  list-style: none;
+}
+
 
 .menu {
   line-height: 4vh;
@@ -84,6 +92,7 @@ img.Arrow {
   line-height: 6vh;
 }
 
+
 #planets {
   display: flex;
   flex-direction: column;
@@ -93,4 +102,18 @@ img.Arrow {
   background-position: center;
   background-size: contain;
   margin-bottom: 0;
+
+
+.planetContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.popup {
+  display: none;
+  border: 2px solid white;
+  border-radius: 0.3em;
+
 }
