@@ -14,9 +14,10 @@
 
 body {
     cursor: url(../images/cursor.png), auto;
-    background-size: contain;
+    background-size:cover;
     background-position: center;
-}
+    background-attachment:fixed;
+  }
 
 
 a {
