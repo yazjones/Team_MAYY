@@ -1,33 +1,49 @@
 
+@font-face {
+    font-family: 'death_starregular';
+    src: url('../Fonts/death_star-webfont.woff2') format('woff2'),
+         url('../Fonts/death_star-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'StoneWalls';
+    src: url('../Fonts/stonewalls-webfont.woff2') format('woff2'),
+         url('../Fonts/stonewalls-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .content {
-    opacity: 0.0;
-    transition: all 500ms ease-in-out;
-    background-color: black;
-    color: white;
+  opacity: 0.0;
+  transition: all 500ms ease-in-out;
+  color: white;
+  align-self: center;
 }
 .hover {
 
 }
 .hover:hover + .content {
-    opacity: 1.0;
+  opacity: 1.0;
 }
 
 body {
-    cursor: url(../images/cursor.png), auto;
-    background-size:cover;
-    background-position: center;
-    background-attachment:fixed;
-  }
-
+  cursor: url(../images/cursor.png), auto;
+}
 
 a {
   margin: auto;
-  font-family:sans-serif;
+  font-family: 'StoneWalls';
   font-size: 150%;
-  font-weight:normal;
+  font-weight: normal;
   color:white;
 }
 
+.menu {
+  line-height: 4vh;
+  background-color: black;
+}
 
 div {
     background-color: rgba(0,0,0,0.5);
@@ -49,18 +65,32 @@ img.Arrow {
 	to {left:200px;}
 }
 
-h2 {
-  display:flex;
+.logo-title {
+  background: url(../images/TitleLogo.jpg);
+  height: 86vh;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+}
+.subtitle {
+  display: flex;
   justify-content: center;
-  width:100%;
-  font-size: 600%;
+}
+  width: 100%;
+  font-size: 35px;
+  font-family: "StoneWalls", sans-serif;
+  color: white;
+  background-color: black;
+  line-height: 6vh;
 }
 
-
-h3 {
-  display:flex;
-  justify-content: center;
-  width:100%;
-  font-size: 600%;
-  color: white;
+#planets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../images/Background.jpg");
+  background-color: black;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 0;
 }
