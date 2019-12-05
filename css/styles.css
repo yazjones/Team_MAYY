@@ -22,19 +22,27 @@
   align-self: center;
 }
 
+nav {
+  background-color: #000;
+}
+
 .nav-link {
   text-transform: uppercase;
 }
 
-.nav-link:hover {
+a:hover {
     color: #999;
     opacity: 1.0;
+    text-decoration: none;
 }
 
 body {
-  cursor: url(../images/cursor.png), auto;
+  cursor: url(../images/cursor1.png), auto;
   background-color: #000;
   background-image: url(../images/Starry.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #ddd;
 }
 
@@ -89,7 +97,6 @@ img.Arrow {
   width: 100%;
   font-size: 35px;
   font-family: "StoneWalls", sans-serif;
-  color: white;
   background-color: black;
   line-height: 6vh;
 }
@@ -99,8 +106,6 @@ img.Arrow {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../images/Background.jpg");
-  background-color: black;
   background-position: center;
   background-size: contain;
   margin-bottom: 0;
