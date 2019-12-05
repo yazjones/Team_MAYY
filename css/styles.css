@@ -24,6 +24,8 @@
 
 .nav-link {
   text-transform: uppercase;
+}
+
 .nav-link:hover {
     color: #999;
     opacity: 1.0;
@@ -32,6 +34,7 @@
 body {
   cursor: url(../images/cursor.png), auto;
   background-color: #000;
+  background-image: url(../images/Starry.gif);
   color: #ddd;
 }
 
@@ -67,8 +70,7 @@ img.Arrow {
 	animation-delay:-2s;
 }
 
-@keyframes mymove
-{
+@keyframes mymove {
 	from {left:0px;}
 	to {left:200px;}
 }
@@ -80,10 +82,10 @@ img.Arrow {
   background-size: cover;
   background-color: black;
 }
+
 .subtitle {
   display: flex;
   justify-content: center;
-}
   width: 100%;
   font-size: 35px;
   font-family: "StoneWalls", sans-serif;
@@ -102,7 +104,7 @@ img.Arrow {
   background-position: center;
   background-size: contain;
   margin-bottom: 0;
-
+}
 
 .planetContainer {
   display: flex;
