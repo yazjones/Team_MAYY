@@ -124,3 +124,13 @@ img.Arrow {
   border-radius: 0.3em;
 
 }
+
+.social {
+  display:flex;
+  align-items:center;
+  height: 100px;
+}
+
+.social img {
+  height: 80px;
+}
