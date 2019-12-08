@@ -1,33 +1,68 @@
 
-.content {
-    opacity: 0.0;
-    transition: all 500ms ease-in-out;
-    background-color: black;
-    color: white;
+@font-face {
+    font-family: 'death_starregular';
+    src: url('../Fonts/death_star-webfont.woff2') format('woff2'),
+         url('../Fonts/death_star-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
-.hover {
 
+@font-face {
+    font-family: 'StoneWalls';
+    src: url('../Fonts/stonewalls-webfont.woff2') format('woff2'),
+         url('../Fonts/stonewalls-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
-.hover:hover + .content {
+
+.content {
+  opacity: 0.0;
+  transition: all 500ms ease-in-out;
+  color: white;
+  align-self: center;
+}
+
+nav {
+  background-color: #000;
+}
+
+.nav-link {
+  text-transform: uppercase;
+}
+
+a:hover {
+    color: #999;
     opacity: 1.0;
+    text-decoration: none;
 }
 
 body {
-    cursor: url(../images/cursor.png), auto;
-    background-size:cover;
-    background-position: center;
-    background-attachment:fixed;
-  }
-
+  cursor: url(../images/cursor1.png), auto;
+  background-color: #000;
+  background-image: url(../images/Starry.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ddd;
+}
 
 a {
   margin: auto;
-  font-family:sans-serif;
+  font-family: 'StoneWalls';
   font-size: 150%;
-  font-weight:normal;
+  font-weight: normal;
   color:white;
 }
 
+ul {
+  list-style: none;
+}
+
+
+.menu {
+  line-height: 4vh;
+  background-color: black;
+}
 
 div {
     background-color: rgba(0,0,0,0.5);
@@ -43,24 +78,49 @@ img.Arrow {
 	animation-delay:-2s;
 }
 
-@keyframes mymove
-{
+@keyframes mymove {
 	from {left:0px;}
 	to {left:200px;}
 }
 
-h2 {
-  display:flex;
+.logo-title {
+  background: url(../images/TitleLogo.jpg);
+  height: 86vh;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+}
+
+.subtitle {
+  display: flex;
   justify-content: center;
-  width:100%;
-  font-size: 600%;
+  width: 100%;
+  font-size: 35px;
+  font-family: "StoneWalls", sans-serif;
+  background-color: black;
+  line-height: 6vh;
 }
 
 
-h3 {
-  display:flex;
-  justify-content: center;
-  width:100%;
-  font-size: 600%;
-  color: white;
+#planets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 0;
+}
+
+.planetContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.popup {
+  display: none;
+  border: 2px solid white;
+  border-radius: 0.3em;
+
 }

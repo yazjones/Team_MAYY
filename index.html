@@ -5,15 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link href="css/styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Handlee|Patrick+Hand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet">
+  <script src="popup.js"></script>
   <title>The Solar System</title>
 </head>
 
-<body background="./images/Starry.gif">
+<body>
+  <nav class="nav justify-content-center">
+    <a class="nav-link active" href="#">home</a>
+    <a class="nav-link" href="#">real planet position</a>
+    <a class="nav-link" href="#">events</a>
+    <a class="nav-link" href="#">about</a>
+  </nav>
 
-  <nav class="nav justify-content-center" style="background-color: black">
-    <a class="nav-link active" href="#">
+<div>
+      <img src="./images/TitleLogo.jpg" alt="the Solar System" width="100%">
+      <a href="#planets">
+        <h2 class="subtitle">▼▼▼  Start the Journey  ▼▼▼</h2>
+      </a>
+</div>
+
+  <ul id="planets">
+    <li><img src="./images/sun.png" alt="sun" width="100%"></li>
+
+    <li class="planetContainer">
+      <img src="./images/mercury.png" alt="mercury" width="250px">
+      <div class="popup">TEXT Mercury</div>
+    </li>
+    <li class="planetContainer">
+      <img src="./images/venus.png" alt="venus" width="450px">
+      <div class="popup">TEXT Venus</div>
+    </li>
+    <li class="planetContainer">
+      <img src="./images/earth.png" alt="earth" width="500px">
+      <div class="popup">TEXT Earth</div>
+    </li>
+    <li class="planetContainer">
+      <img src="./images/mars.png" alt="mars" width="300px">
+      <div class="popup">TEXT Mars</div>
+    </li>
+    <li class="planetContainer">
+      <img src="./images/jupiter.png" alt="jupiter" width="1100px">
+      <div class="popup">TEXT Jupiter</div>
+    </li>
+    <li class="planetContainer">
+      <img src="./images/saturn.png" alt="saturn" width="1000px">
+      <div class="popup">TEXT Saturn</div>
+    </li>
+    <li class="planetContainer">
+      <img src="./images/uranus.png" alt="uranus" width="800px">
+      <div class="popup">TEXT Uranus</div>
+    </li>
+    <li class="planetContainer">
+      <img src="./images/neptune.png" alt="neptune" width="750px">
+      <div class="popup">TEXT Neptune</div>
+    </li>
+    <li class="planetContainer">
+      <img src="./images/pluto.png" alt="pluto" width="200px">
+      <div class="popup">TEXT Pluto</div>
+    </li>
+  </ul>
+<!--
       <font color="white">Home</font></a>
     <a class="nav-link" href="#">
       <font color="white">People</font></a>
@@ -23,18 +77,14 @@
       <font color="white">About</font></a>
   </nav>
 
-<div>
-      <img src="./images/TitleLogo.jpg" alt="the Solar System" width="100%">
-  <!-- The TitleLogo is designed with the Photo by Graham Holtshausen on Unsplash -->
-      <img src="./images/Arrow.png" alt="scroll for more fun" width="10%"">
-      <h2><font color="#5A5A5A">Let's</font></h2>
-      <h2><font color="grey">Start</font></h2>
-      <h2><font color="#C8C8C8">the</font></h2>
-      <h2><font color="white">Journey!</font></h2>
-      <h2>  </h2>
-</div>
+  <div class="header">
+    <div class="logo-title"></div>
+    <a href="#planets">
+      <h2 class="subtitle">▼▼▼  Start the Journey  ▼▼▼</h2>
+    </a>
+  </div>
 
-  <ul>
+  <ul id="planets">
     <li><img src="./images/sun.png" alt="sun" width="100%" class="hover">
       <p class="content"> TEXT Sun</p></li>
     <li><img src="./images/mercury.png" alt="mercury" width="250px" class="hover">
@@ -55,8 +105,10 @@
       <p class="content"> TEXT Neptune</p></li>
     <li><img src="./images/pluto.png" alt="pluto" width="200px" class="hover">
       <p class="content"> TEXT Pluto</p></li>
+-->
     <!-- I authorize the Team MAYY to use my art work, the solar system planet painting and the star background, in their project for Code First Girls lessons, winter of 2019. —— Yalan -->
-  </ul>
+
+
 
   <div>
     <h3>A Bigger Cosmos</h3>
