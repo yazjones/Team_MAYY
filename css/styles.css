@@ -65,30 +65,39 @@ ul {
 }
 
 div {
-    background-color: rgba(0,0,0,0.5);
-    background-size: cover;
+    background-color: rgba(0,0,0,0);
+    background-size:cover;
 }
 
-img.Arrow {
-  display: flex;
-	width:100px;
-	height:100px;
-	position:relative;
-	animation:mymove 5s infinite;
-	animation-delay:-2s;
-}
-
-@keyframes mymove {
-	from {left:0px;}
-	to {left:200px;}
-}
 
 .logo-title {
   background: url(../images/TitleLogo.jpg);
   height: 86vh;
   background-position: center;
   background-size: cover;
-  background-color: black;
+  background-color: rgba(0,0,0,0.5);
+}
+
+
+.arrow{
+  display: flex;
+  align-items: center;
+}
+
+.arrow img {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+	width:100px;
+	height:100px;
+	position:relative;
+	animation:mymove 3s infinite;
+	animation-delay:-2s;
+}
+
+@keyframes mymove {
+	from {top:-130px;}
+	to {top:0px;}
 }
 
 .subtitle {
@@ -100,7 +109,6 @@ img.Arrow {
   background-color: black;
   line-height: 6vh;
 }
-
 
 #planets {
   display: flex;
@@ -122,8 +130,8 @@ img.Arrow {
 
 .popup {
   display: none;
-  border: 2px solid white;
-  border-radius: 0.3em;
+  /* border: 2px solid white;
+  border-radius: 0.3em; */
 
 }
 
