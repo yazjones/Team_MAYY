@@ -109,6 +109,7 @@ img.Arrow {
   background-position: center;
   background-size: contain;
   margin-bottom: 0;
+  padding-left: 0;
 }
 
 .planetContainer {
@@ -123,4 +124,14 @@ img.Arrow {
   border: 2px solid white;
   border-radius: 0.3em;
 
+}
+
+.social {
+  display:flex;
+  align-items:center;
+  height: 100px;
+}
+
+.social img {
+  height: 80px;
 }
