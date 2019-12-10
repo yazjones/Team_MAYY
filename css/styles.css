@@ -1,8 +1,8 @@
 
 @font-face {
-    font-family: 'death_starregular';
-    src: url('../Fonts/death_star-webfont.woff2') format('woff2'),
-         url('../Fonts/death_star-webfont.woff') format('woff');
+    font-family: 'SpaceMono';
+    src: url('../Fonts/spacemono-regular-webfont.woff2') format('woff2'),
+         url('../Fonts/spacemono-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -51,7 +51,7 @@ a {
   font-family: 'StoneWalls';
   font-size: 150%;
   font-weight: normal;
-  color:white;
+  color: white;
 }
 
 ul {
@@ -65,30 +65,39 @@ ul {
 }
 
 div {
-    background-color: rgba(0,0,0,0.5);
-    background-size: cover;
+    background-color: rgba(0,0,0,0);
+    background-size:cover;
 }
 
-img.Arrow {
-  display: flex;
-	width:100px;
-	height:100px;
-	position:relative;
-	animation:mymove 5s infinite;
-	animation-delay:-2s;
-}
-
-@keyframes mymove {
-	from {left:0px;}
-	to {left:200px;}
-}
 
 .logo-title {
   background: url(../images/TitleLogo.jpg);
   height: 86vh;
   background-position: center;
   background-size: cover;
-  background-color: black;
+  background-color: rgba(0,0,0,0.5);
+}
+
+
+.arrow {
+  display: flex;
+  align-items: center;
+}
+
+.arrow img {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	animation:mymove 3s infinite;
+	animation-delay: -2s;
+}
+
+@keyframes mymove {
+	from {top:-130px;}
+	to {top:0px;}
 }
 
 .subtitle {
@@ -101,7 +110,6 @@ img.Arrow {
   line-height: 6vh;
 }
 
-
 #planets {
   display: flex;
   flex-direction: column;
@@ -110,6 +118,7 @@ img.Arrow {
   background-size: contain;
   margin-bottom: 0;
   padding-left: 0;
+  font-family: "SpaceMono", sans-serif;
 }
 
 .planetContainer {
@@ -121,13 +130,14 @@ img.Arrow {
 
 .popup {
   display: none;
-  border: 2px solid white;
-  border-radius: 0.3em;
+  width: 40%;
+  /* border: 2px solid white;
+  border-radius: 0.3em; */
 
 }
 
 .social {
-  display:flex;
+  display: flex;
   align-items:center;
   height: 100px;
 }
@@ -135,3 +145,66 @@ img.Arrow {
 .social img {
   height: 60px;
 }
+
+
+<!-- styles for contact -->
+
+label {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    letter-spacing: 2px;
+}
+
+.c_body {
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    width: 580px;
+}
+
+form {
+    margin:0 auto;
+    margin-top: 15%;
+    width: 460px;
+}
+
+
+input, textarea {
+  width: 440px;
+  height: 30px;
+  background: #efefef;
+  border: none;
+  padding: 4px;
+  margin-top: 1px;
+  margin-bottom: 4px;
+  font-size: 0.9em;
+  color: BLACK BOLD;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
+textarea {
+	height:213px;
+	background: right no-repeat #efefef;
+
+}
+
+//*
+#submit {
+  opacity: 0.7;
+} *//
+#submit {
+  width: 50px;
+  height: 40px;
+  text-indent: -9999px;
+  border: none;
+  margin-top: auto;
+  cursor: pointer;
+}
+
+#submit:hover {
+	opacity: 0.2;
+	}
